@@ -1,6 +1,9 @@
 import { meet } from "@googleworkspace/meet-addons/meet.addons";
 
-const CLOUD_PROJECT_NUMBER = "613174040862";
+//const CLOUD_PROJECT_NUMBER = "613174040862";
+
+const CLOUD_PROJECT_NUMBER = "893187114358";
+
 const MAIN_STAGE_URL =
   "https://sloegr.github.io/hello-world-meet/MainPage.html";
 
