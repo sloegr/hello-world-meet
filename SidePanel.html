@@ -1,19 +1,19 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Meet add-on Side Panel</title>
-    <script src="./main.js"></script>
+    <meta charset="utf-8" />
+    <title>Side Panel</title>
   </head>
+  <body>
+    <h1>Hello World Meet Add-on</h1>
+    <button id="start-activity">Start Activity</button>
 
-  <body style="width: 100%; height: 100%; margin: 0">
-    <div>This is the add-on Side Panel. Only you can see this.</div>
-    <button id="start-activity">Launch Activity in Main Stage.</button>
-
+    <script src="main.js"></script>
     <script>
-      document.body.onload = () => {
-        // Library name (`helloWorld`) is defined in the webpack config.
-        // The function (`setUpAddon`) is defined in main.js.
-        helloWorld.setUpAddon();
-      };
+      // Call the function from main.js on page load
+      helloWorld.setUpAddon().catch((error) => {
+        console.error("Error setting up add-on:", error);
+      });
     </script>
   </body>
 </html>
