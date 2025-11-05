@@ -8,12 +8,11 @@
     <h1>Main Stage Activity</h1>
     <p>This is the main stage content.</p>
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
     <script>
-      // Call the function from main.js on page load
-      helloWorld.initializeMainStage().catch((error) => {
-        console.error("Error initializing main stage:", error);
-      });
+      document.body.onload = () => {
+        helloWorld.initializeMainStage();
+      };
     </script>
   </body>
 </html>
