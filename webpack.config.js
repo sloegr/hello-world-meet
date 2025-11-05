@@ -7,7 +7,7 @@ module.exports = {
     library: "helloWorld",
     path: path.resolve(__dirname, "./dist/hello-world"),
   },
-  mode: "development",
+  mode: "production",
   plugins: [
     new CopyPlugin({
       patterns: [
